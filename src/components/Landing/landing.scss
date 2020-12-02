@@ -1,8 +1,71 @@
 .landing-background {
   width: 100vw;
   height: 100vh;
-  background-image: url(../../assets/images/road-on-forest.jpg);
+  background-image: url(../../assets/images/darkroad-on-forest.jpg);
   background-position: left;
   background-size: cover;
-  filter: brightness(60%);
+  padding: 1rem 10%;
+
+  .navbar {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .burger-icon {
+    }
+
+    .logo-section {
+      display: flex;
+      align-items: center;
+      .logo {
+        p {
+          padding: 10px;
+          background-color: #74b81f;
+          border-radius: 50%;
+          font-weight: bold;
+        }
+      }
+      .logo-text {
+        padding-left: 10px;
+        h1 {
+          padding-bottom: 0.15rem;
+          font-weight: 500;
+          font-size: 0.8em;
+        }
+        h2 {
+          font-size: 0.6em;
+        }
+      }
+    }
+  }
+
+  .landing-content {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%); //TODO
+    // padding: 0 10%;
+    color: #fff;
+
+    .presentation {
+      margin-bottom: 1rem;
+      strong {
+        font-weight: bold;
+        color: #74b81f;
+      }
+    }
+
+    .sub-title {
+      margin-bottom: 1.5rem;
+      font-size: 1.2em;
+      font-weight: 600;
+    }
+
+    .description {
+      font-weight: 400;
+      font-size: 0.7em;
+      line-height: 1.3;
+    }
+  }
 }
