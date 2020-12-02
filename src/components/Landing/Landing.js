@@ -1,10 +1,9 @@
 import React from 'react'
+import './landing.scss';
 
 const Landing = () => {
     return (
-        <div>
-            <h1>Landing Page</h1>
-        </div>
+        <div className="landing-background"></div>
     )
 }
 
