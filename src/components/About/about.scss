@@ -47,10 +47,20 @@
       }
     }
     .image-section {
-      .image {
-        box-sizing: border-box;
-        max-width: 70%;
-        height: auto;
+      display: flex; // image section centred
+      justify-content: center;
+      // position: relative; // image section aligned on left
+      // left: 20px;
+      .green-border {
+        border: 5px solid vars.$green;
+        width: 70%;
+        .image {
+          transform: scale(1.04);
+          max-width: 100%;
+          position: relative;
+          top: 20px;
+          right: 20px;
+        }
       }
     }
   }

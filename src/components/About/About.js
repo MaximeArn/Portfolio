@@ -34,12 +34,13 @@ const About = () => {
           </div>
         </div>
         <div className="image-section">
-          <img
-            className="image"
-            src={profileImage}
-            alt="profile image of a man"
-          />
-          <div className="green-border"></div>
+          <div className="green-border">
+            <img
+              className="image"
+              src={profileImage}
+              alt="profile image of a man"
+            />
+          </div>
         </div>
       </div>
     </div>
