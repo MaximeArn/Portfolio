@@ -2,6 +2,7 @@ import React from 'react'
 import './landing.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars} from '@fortawesome/free-solid-svg-icons'
+import resume from '../../assets/resume.jpg';
 
 const Landing = () => {
     return (
@@ -30,7 +31,12 @@ const Landing = () => {
 
                 <div className="buttons">
                     <button className="green-button">About Me</button>
-                    <button>Download CV</button>
+                    <a href={resume} download="Maxime-Arnould-Resume">
+                    <button>
+                        Download CV
+                    </button>
+
+                    </a>
                 </div>
             </div>
         </div>
