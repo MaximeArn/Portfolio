@@ -34,6 +34,12 @@
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
+
+      .list-item:hover {
+        .list-item-link {
+          color: #74b81f;
+        }
+      }
     }
   }
 }
