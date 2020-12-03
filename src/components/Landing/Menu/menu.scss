@@ -5,12 +5,16 @@
   position: fixed;
   top: 0;
   left: 0;
-  // left: 100vw;
   z-index: 999;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
+  transition: all 0.5s;
+
+  &.closed {
+    left: 100vw;
+  }
 
   .closeMenuIcon {
     position: absolute;

@@ -9,7 +9,7 @@ const Landing = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div className="landing-background">
-      {menuOpen && <Menu menuOpen setMenuOpen={setMenuOpen} />}
+      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <header className="navbar">
         <div className="logo-section">
           <div className="logo">
@@ -20,7 +20,7 @@ const Landing = () => {
             <h2>Web Developer</h2>
           </div>
         </div>
-        <div className="burger-icon" onClick={() => setMenuOpen(!menuOpen)}>
+        <div className="burger-icon" onClick={() => setMenuOpen(true)}>
           <FontAwesomeIcon icon={faBars} />
         </div>
       </header>
