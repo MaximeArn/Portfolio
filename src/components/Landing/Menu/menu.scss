@@ -1,3 +1,5 @@
+@use '../../../styles/vars';
+
 .menu {
   width: 100vw;
   height: 100vh;
@@ -9,7 +11,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: vars.$white;
   transition: all 0.5s;
 
   &.closed {
@@ -37,7 +39,7 @@
 
       .list-item:hover {
         .list-item-link {
-          color: #74b81f;
+          color: vars.$green;
         }
       }
     }

@@ -20,9 +20,9 @@ const Landing = () => {
             <h2>Web Developer</h2>
           </div>
         </div>
-        <div className="burger-icon" onClick={() => setMenuOpen(true)}>
+        <i className="burger-icon" onClick={() => setMenuOpen(true)}>
           <FontAwesomeIcon icon={faBars} />
-        </div>
+        </i>
       </header>
       <div className="landing-content">
         <div className="text">
@@ -39,7 +39,9 @@ const Landing = () => {
         </div>
 
         <div className="buttons">
-          <button className="green-button">About Me</button>
+          <a href="#about">
+            <button className="green-button">About Me</button>
+          </a>
           <a href={resume} download="Maxime-Arnould-Resume">
             <button>Download CV</button>
           </a>

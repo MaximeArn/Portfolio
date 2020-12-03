@@ -1,3 +1,5 @@
+@use '../../styles/vars';
+
 .landing-background {
   width: 100vw;
   height: 100vh;
@@ -7,7 +9,7 @@
   padding: 1rem 10%;
 
   .navbar {
-    color: #fff;
+    color: vars.$white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,7 +24,7 @@
       .logo {
         p {
           padding: 5px;
-          background-color: #74b81f;
+          background-color: vars.$green;
           border-radius: 50%;
           font-weight: bold;
         }
@@ -46,13 +48,13 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #fff;
+    color: vars.$white;
 
     .presentation {
       margin-bottom: 1rem;
       strong {
         font-weight: bold;
-        color: #74b81f;
+        color: vars.$green;
       }
     }
 
@@ -71,12 +73,12 @@
 
     .buttons {
       .green-button {
-        background-color: #74b81f;
+        background-color: vars.$green;
       }
 
       button {
         padding: 0.5rem 1.5rem;
-        color: #fff;
+        color: vars.$white;
         background-color: #222;
         border: none;
         margin-right: 10%;
