@@ -10,6 +10,7 @@
     flex-direction: column;
 
     .text {
+      margin-bottom: 3rem;
       h2 {
         display: inline-block;
         color: vars.$green;
@@ -26,6 +27,30 @@
         margin-bottom: 1rem;
         line-height: 1.5;
         font-weight: 400;
+      }
+
+      .media-icons {
+        display: flex;
+        i {
+          width: 25px;
+          height: 25px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: vars.$green;
+          color: vars.$white;
+          padding: 5px;
+          border-radius: 50%;
+          margin-right: 10px;
+          font-size: 0.8em;
+        }
+      }
+    }
+    .image-section {
+      .image {
+        box-sizing: border-box;
+        max-width: 70%;
+        height: auto;
       }
     }
   }

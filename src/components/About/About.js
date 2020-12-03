@@ -2,7 +2,7 @@ import React from "react";
 import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
-
+import profileImage from "../../assets/images/profile-image.jpg";
 import "./about.scss";
 
 const About = () => {
@@ -21,7 +21,7 @@ const About = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
             consectetur voluptatibus nemo aliquam doloribus{" "}
           </p>
-          <div className="medias-icons">
+          <div className="media-icons">
             <i>
               <FaFacebookF />
             </i>
@@ -33,8 +33,13 @@ const About = () => {
             </i>
           </div>
         </div>
-        <div className="image">
-          <img src="" alt="" />
+        <div className="image-section">
+          <img
+            className="image"
+            src={profileImage}
+            alt="profile image of a man"
+          />
+          <div className="green-border"></div>
         </div>
       </div>
     </div>
