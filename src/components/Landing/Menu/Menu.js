@@ -13,7 +13,11 @@ const Menu = ({ menuOpen, setMenuOpen }) => {
       <nav>
         <ul className="link-list">
           {links.map((link) => (
-            <li className="list-item">
+            <li
+              key={link}
+              className="list-item"
+              onClick={() => setMenuOpen(false)}
+            >
               <a className="list-item-link" href={`#${link}`}>
                 {link}
               </a>
