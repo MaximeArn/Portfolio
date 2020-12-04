@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { FaAngleDoubleRight } from "react-icons/fa";
+import { FaAngleDoubleLeft } from "react-icons/fa";
 import projectImage from "../../assets/images/project.jpg";
 import "./portfolio.scss";
 
@@ -27,8 +29,14 @@ const Portfolio = () => {
         <h2>latest Work</h2>
         <div className="carousel">
           {carousel[carouselId]}
-          <button onClick={incrementCarouselID}>+</button>
-          <button onClick={decrementCarouselID}>-</button>
+          <div className="buttons">
+            <button onClick={decrementCarouselID}>
+              <FaAngleDoubleLeft />
+            </button>
+            <button onClick={incrementCarouselID}>
+              <FaAngleDoubleRight />
+            </button>
+          </div>
         </div>
       </div>
     </section>
