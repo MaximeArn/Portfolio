@@ -1,0 +1,32 @@
+@use '../../styles/vars';
+
+.portfolio {
+  padding: 0 10%;
+  &-content {
+    padding: 4rem 0;
+
+    h2 {
+      display: inline-block;
+      color: vars.$green;
+      text-transform: uppercase;
+      font-weight: 700;
+      padding: 0.2rem;
+      border-bottom: 2px solid vars.$green;
+      margin-bottom: 3rem;
+    }
+
+    .carousel {
+      article {
+        position: relative;
+        p {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          font-size: 2em;
+          font-weight: 700;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+}
