@@ -8,41 +8,6 @@
   background-size: cover;
   padding: 1rem 10%;
 
-  .navbar {
-    color: vars.$white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .burger-icon {
-      font-size: 1.2em;
-    }
-
-    .logo-section {
-      display: flex;
-      align-items: center;
-      .logo {
-        p {
-          padding: 5px;
-          background-color: vars.$green;
-          border-radius: 50%;
-          font-weight: bold;
-        }
-      }
-      .logo-text {
-        padding-left: 5px;
-        h1 {
-          padding-bottom: 0.15rem;
-          font-weight: 500;
-          font-size: 0.8em;
-        }
-        h2 {
-          font-size: 0.6em;
-        }
-      }
-    }
-  }
-
   .landing-content {
     position: relative;
     top: 50%;

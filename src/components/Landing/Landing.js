@@ -1,29 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import "./landing.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-import Menu from "./Menu/Menu";
 import resume from "../../assets/resume.jpg";
 
 const Landing = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <section className="landing-background">
-      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <header className="navbar">
-        <div className="logo-section">
-          <div className="logo">
-            <p>M</p>
-          </div>
-          <div className="logo-text">
-            <h1>Maxime Arnould</h1>
-            <h2>Web Developer</h2>
-          </div>
-        </div>
-        <i className="burger-icon" onClick={() => setMenuOpen(true)}>
-          <FontAwesomeIcon icon={faBars} />
-        </i>
-      </header>
+    <section className="landing-background" id="home">
       <div className="landing-content">
         <div className="text">
           <p className="presentation">
