@@ -7,7 +7,7 @@ import "./about.scss";
 
 const About = () => {
   return (
-    <div className="about" id="about">
+    <section className="about" id="about">
       <div className="about-content">
         <div className="text">
           <h2>about me</h2>
@@ -43,7 +43,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

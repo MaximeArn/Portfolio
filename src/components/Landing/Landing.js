@@ -8,7 +8,7 @@ import resume from "../../assets/resume.jpg";
 const Landing = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <div className="landing-background">
+    <section className="landing-background">
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <header className="navbar">
         <div className="logo-section">
@@ -47,7 +47,7 @@ const Landing = () => {
           </a>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

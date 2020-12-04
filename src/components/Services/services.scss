@@ -1,0 +1,17 @@
+@use '../../styles/vars';
+
+.services {
+  padding: 4rem 0;
+  background-color: #f9f9f9;
+  &-content {
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    img {
+      width: 100%;
+    }
+    .services-illustration {
+      padding-top: 2rem;
+    }
+  }
+}
