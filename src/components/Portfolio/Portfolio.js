@@ -9,6 +9,7 @@ const Portfolio = () => {
   const carousel = testData.map((name) => (
     <article>
       <img src={projectImage} alt="illustration of the project" />
+      <div className="dark-background"></div>
       <p>{name}</p>
     </article>
   ));
