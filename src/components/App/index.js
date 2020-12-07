@@ -4,6 +4,7 @@ import Landing from "../Landing/Landing";
 import About from "../About/About";
 import Services from "../Services/Services";
 import Portfolio from "../Portfolio/Portfolio";
+import Footer from "../Footer/Footer";
 
 const App = () => (
   <div className="app">
@@ -12,6 +13,7 @@ const App = () => (
     <About />
     <Services />
     <Portfolio />
+    <Footer />
   </div>
 );
 
