@@ -3,7 +3,7 @@ import "./menu.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 
-const links = ["home", "about", "services", "portfolio", "blog"];
+const links = ["home", "about", "services", "portfolio", "contact"];
 const Menu = ({ menuOpen, setMenuOpen }) => {
   return (
     <div className={menuOpen ? "menu" : "menu closed"}>
