@@ -43,18 +43,36 @@
       }
 
       article {
-        margin-bottom: 1rem;
-        // .infos {
-        //   position: absolute;
-        //   top: 50%;
-        //   left: 50%;
-        //   font-size: 1.5em;
-        //   font-weight: 600;
-        //   text-transform: uppercase;
-        //   transform: translate(-50%, -50%);
-        //   color: vars.$green;
-        //   text-shadow: 0 0 10px #000;
-        // }
+        margin-bottom: 2rem;
+        position: relative;
+        .infos {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          width: 100%;
+          background-color: rgba(0, 0, 0, 0.2);
+          text-align: center;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          font-size: 1.5em;
+          font-weight: 600;
+          text-transform: uppercase;
+          transform: translate(-50%, -50%);
+          color: vars.$green;
+          text-shadow: 0 0 10px #000;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  article {
+    .infos {
+      .technos {
+        display: none;
       }
     }
   }

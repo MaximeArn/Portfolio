@@ -33,9 +33,9 @@ const Portfolio = () => {
       <div className="portfolio-content">
         <h2>latest Work</h2>
         <div className="carousel">
-          {data.map(({ name, technos }) => (
+          {data.map(({ name, technos, image }) => (
             <article>
-              <img src={projectImage} alt="illustration of the project" />
+              <img src={image} alt="illustration of the project" />
               <div className="infos">
                 <p className="name">{name}</p>
                 <p className="technos">{technos}</p>
