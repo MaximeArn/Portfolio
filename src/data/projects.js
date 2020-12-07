@@ -1,7 +1,6 @@
 import tindev from "../assets/images/projects/tindev.jpg";
 import calculator from "../assets/images/projects/calculator.png";
-import image3 from "../assets/images/projects/project3.jpg";
-import image4 from "../assets/images/projects/project4.jpg";
+import portfolio from "../assets/images/projects/portfolio.png";
 
 export default [
   {
@@ -17,11 +16,6 @@ export default [
   {
     name: "portfolio",
     technos: ["javascript", "react"],
-    image: image3,
-  },
-  {
-    name: "other",
-    technos: ["typescript", "react", "redux", "sql"],
-    image: image4,
+    image: portfolio,
   },
 ];
