@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import fieldsValidator from "../../utils/fieldValidator";
 import "./contact.scss";
 
 const Contact = () => {
@@ -23,10 +24,14 @@ const Contact = () => {
       },
     };
 
-    axios
-      .post("https://api.emailjs.com/api/v1.0/email/send", data)
-      .then((res) => console.log(res))
-      .catch((err) => console.log(err));
+    const fieldsValidated = fieldsValidator(data.template_params);
+    fieldsValidated
+      ? // axios
+        //     .post("https://api.emailjs.com/api/v1.0/email/send", data)
+        //     .then((res) => console.log(res))
+        //     .catch((err) => console.log(err))
+        console.log("send mail")
+      : console.log(fieldsValidated);
   };
 
   return (
@@ -38,6 +43,7 @@ const Contact = () => {
         </div>
         <form onSubmit={sendEmail}>
           <input
+            required
             type="text"
             name="name"
             placeholder="Full Name"
@@ -52,6 +58,7 @@ const Contact = () => {
             onChange={({ target: { value } }) => setFromEmail(value)}
           />
           <input
+            required
             type="text"
             name="subject"
             placeholder="Subject"
@@ -59,6 +66,7 @@ const Contact = () => {
             onChange={({ target: { value } }) => setSubject(value)}
           />
           <textarea
+            required
             name="text"
             placeholder="Write Your Message Here"
             value={text}
