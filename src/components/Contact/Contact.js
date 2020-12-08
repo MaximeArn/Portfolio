@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { init } from "emailjs-com";
 import "./contact.scss";
 
 const Contact = () => {
@@ -6,6 +7,10 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [text, setText] = useState("");
+
+  useEffect(() => {
+    init("user_k3QZRYPdVhHQYa0nSIhvj");
+  }, []);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -25,27 +30,27 @@ const Contact = () => {
             name="name"
             placeholder="Full Name"
             value={name}
-            onChange={(e) => setName(e.target.value)}
+            onChange={({ target: { value } }) => setName(value)}
           />
           <input
             type="email"
             name="email"
             placeholder="Enter Your Email"
             value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={({ target: { value } }) => setEmail(value)}
           />
           <input
             type="text"
             name="subject"
             placeholder="Subject"
             value={subject}
-            onChange={(e) => setSubject(e.target.value)}
+            onChange={({ target: { value } }) => setSubject(value)}
           />
           <textarea
             name="text"
             placeholder="Write Your Message Here"
             value={text}
-            onChange={(e) => setText(e.target.value)}
+            onChange={({ target: { value } }) => setText(value)}
           ></textarea>
           <div className="submit-wrapper">
             <button type="submit">Send Message</button>
