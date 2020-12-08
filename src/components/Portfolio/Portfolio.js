@@ -10,7 +10,7 @@ const Portfolio = () => {
         <h2>latest Work</h2>
         <div className="carousel">
           {data.map((project) => (
-            <Project {...project} />
+            <Project key={project.name} {...project} />
           ))}
         </div>
       </div>
