@@ -25,13 +25,13 @@ const Contact = () => {
     };
 
     const fieldsValidated = fieldsValidator(data.template_params);
-    fieldsValidated
+    fieldsValidated instanceof Error
       ? // axios
         //     .post("https://api.emailjs.com/api/v1.0/email/send", data)
         //     .then((res) => console.log(res))
         //     .catch((err) => console.log(err))
-        console.log("send mail")
-      : console.log(fieldsValidated);
+        console.log(fieldsValidated)
+      : console.log("la on send");
   };
 
   return (
