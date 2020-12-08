@@ -1,20 +1,39 @@
 import React, { useState, useEffect } from "react";
-import { init } from "emailjs-com";
+import emailjs, { init } from "emailjs-com";
+import axios from "axios";
 import "./contact.scss";
 
 const Contact = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
+  // const { USER_ID, SERVICE_ID, TEMPLATE_ID } = process.env;
+
+  const [fromName, setFromName] = useState("");
+  const [fromEmail, setFromEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [text, setText] = useState("");
 
-  useEffect(() => {
-    init("user_k3QZRYPdVhHQYa0nSIhvj");
-  }, []);
+  // useEffect(() => {
+  //   init("user_k3QZRYPdVhHQYa0nSIhvj");
+  // }, []);
 
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log(email, name, subject, text);
+
+    const data = {
+      service_id: process.env.SERVICE_ID,
+      template_id: process.env.TEMPLATE_ID,
+      user_id: process.env.USER_ID,
+      template_params: {
+        fromName,
+        fromEmail,
+        subject,
+        text,
+      },
+    };
+
+    axios
+      .post("https://api.emailjs.com/api/v1.0/email/send", data)
+      .then((res) => console.log(res))
+      .catch((err) => console.log(err));
   };
 
   return (
@@ -29,15 +48,15 @@ const Contact = () => {
             type="text"
             name="name"
             placeholder="Full Name"
-            value={name}
-            onChange={({ target: { value } }) => setName(value)}
+            value={fromName}
+            onChange={({ target: { value } }) => setFromName(value)}
           />
           <input
             type="email"
             name="email"
             placeholder="Enter Your Email"
-            value={email}
-            onChange={({ target: { value } }) => setEmail(value)}
+            value={fromEmail}
+            onChange={({ target: { value } }) => setFromEmail(value)}
           />
           <input
             type="text"
