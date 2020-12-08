@@ -1,19 +1,12 @@
-import React, { useState, useEffect } from "react";
-import emailjs, { init } from "emailjs-com";
+import React, { useState } from "react";
 import axios from "axios";
 import "./contact.scss";
 
 const Contact = () => {
-  // const { USER_ID, SERVICE_ID, TEMPLATE_ID } = process.env;
-
   const [fromName, setFromName] = useState("");
   const [fromEmail, setFromEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [text, setText] = useState("");
-
-  // useEffect(() => {
-  //   init("user_k3QZRYPdVhHQYa0nSIhvj");
-  // }, []);
 
   const sendEmail = (e) => {
     e.preventDefault();
