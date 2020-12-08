@@ -27,6 +27,13 @@
         margin-bottom: 1rem;
         background-color: transparent;
         font-size: 0.8em;
+        font-family: "Roboto Slab", serif;
+        font-weight: 300;
+
+        &::placeholder {
+          font-family: "Roboto Slab", serif;
+          font-weight: 300;
+        }
       }
 
       textarea {
@@ -38,6 +45,14 @@
         margin-bottom: 1rem;
         border-radius: 0;
         border: 1px solid rgba($color: #5e5e5e, $alpha: 0.6);
+        font-family: "Roboto Slab", serif;
+        font-weight: 300;
+
+        &::placeholder {
+          // font-size: 1.2em;
+          font-family: "Roboto Slab", serif;
+          font-weight: 300;
+        }
       }
 
       .submit-wrapper {
