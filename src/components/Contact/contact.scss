@@ -1,0 +1,57 @@
+@use '../../styles/vars';
+
+.contact {
+  background-color: vars.$grey-background;
+  padding: 0 10%;
+
+  &-content {
+    padding: 4rem 0;
+
+    h2 {
+      display: inline-block;
+      color: vars.$green;
+      text-transform: uppercase;
+      font-weight: 700;
+      padding: 0.2rem;
+      border-bottom: 2px solid vars.$green;
+      margin-bottom: 3rem;
+    }
+
+    form {
+      width: 100%;
+
+      input {
+        padding: 0.5rem 1rem;
+        width: 100%;
+        border: 1px solid rgba($color: #5e5e5e, $alpha: 0.6);
+        margin-bottom: 1rem;
+        background-color: transparent;
+        font-size: 0.8em;
+      }
+
+      textarea {
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 130px;
+        padding: 0.5rem 1rem;
+        font-size: 0.8em;
+        margin-bottom: 1rem;
+        border-radius: 0;
+        border: 1px solid rgba($color: #5e5e5e, $alpha: 0.6);
+      }
+
+      .submit-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        button {
+          background-color: vars.$green;
+          color: vars.$white;
+          border: none;
+          padding: 0.5rem 1rem;
+        }
+      }
+    }
+  }
+}
