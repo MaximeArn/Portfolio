@@ -30,6 +30,10 @@
         font-family: "Roboto Slab", serif;
         font-weight: 300;
 
+        &:focus {
+          outline: auto 1px vars.$green;
+        }
+
         &::placeholder {
           font-family: "Roboto Slab", serif;
           font-weight: 300;
@@ -48,8 +52,11 @@
         font-family: "Roboto Slab", serif;
         font-weight: 300;
 
+        &:focus {
+          outline-color: vars.$green;
+        }
+
         &::placeholder {
-          // font-size: 1.2em;
           font-family: "Roboto Slab", serif;
           font-weight: 300;
         }
