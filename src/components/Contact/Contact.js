@@ -28,7 +28,7 @@ const Contact = () => {
 
     const fieldsValidated = fieldsValidator(data.template_params);
     fieldsValidated instanceof Error
-      ? toast(fieldsValidated.message)
+      ? toast.warn(fieldsValidated.message)
       : axios
           .post("https://api.emailjs.com/api/v1.0/email/send", data)
           .then((res) => console.log(res))
@@ -37,7 +37,17 @@ const Contact = () => {
 
   return (
     <>
-      <ToastContainer />
+      <ToastContainer
+        position="top-right"
+        autoClose={4000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
       <section className="contact" id="contact">
         <div className="contact-content">
           <div className="header">
