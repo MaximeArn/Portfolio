@@ -1,10 +1,11 @@
 export default (contactForm) => {
-  const { fromEmail, ...mandatory } = contactForm;
   try {
-    for (const key in mandatory) {
-      if (!mandatory[key].trim().length)
+    for (const key in contactForm) {
+      if (!contactForm[key].trim().length)
         throw new Error(
-          `${key === "fromName" ? "name" : key} must be provided`
+          `${
+            key === "fromName" ? "name" : key === "fromEmail" ? "email" : key
+          } must be provided`
         );
     }
 
