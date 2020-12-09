@@ -3,6 +3,10 @@ import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import fieldsValidator from "../../utils/fieldValidator";
 import "react-toastify/dist/ReactToastify.css";
+import { FaTwitter } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaGithubSquare } from "react-icons/fa";
+
 import "./contact.scss";
 
 const Contact = () => {
@@ -52,7 +56,11 @@ const Contact = () => {
         <div className="contact-content">
           <div className="header">
             <h2>get in touch</h2>
-            <div className="logos"></div>
+            <div className="logos">
+              <FaTwitter />
+              <FaLinkedinIn />
+              <FaGithubSquare />
+            </div>
           </div>
           <form onSubmit={sendEmail}>
             <input
