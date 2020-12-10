@@ -56,5 +56,17 @@
 @media (min-width: 750px) {
   .landing-background {
     padding: 1rem 15%;
+
+    .landing-content {
+      .description {
+        max-width: 80%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .landing-background {
+    padding: 1rem 20%;
   }
 }
