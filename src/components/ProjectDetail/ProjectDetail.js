@@ -5,13 +5,13 @@ import "./projectDetail.scss";
 
 const ProjectDetail = () => {
   const { projectName } = useParams();
-  const { name, technos, image } = getProjectByName(projectName);
+  const { name, technos, image, description } = getProjectByName(projectName);
 
   return (
     <section className="projectDetail">
       <div className="projectDetail-content">
         <h2 className="section-title">{name}</h2>
-        {/* <p>{description}</p> */}
+        <p className="project-description">{description}</p>
       </div>
     </section>
   );

@@ -11,9 +11,7 @@ const NavBar = () => {
   const { pathname } = useLocation();
 
   const handleScroll = () => {
-    pathname !== "/"
-      ? navbar.current.classList.add("scrolled")
-      : window.scrollY > 100
+    window.scrollY > 100
       ? navbar.current.classList.add("scrolled")
       : navbar.current.classList.remove("scrolled");
   };
@@ -28,7 +26,10 @@ const NavBar = () => {
   return (
     <>
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <header className="navbar" ref={navbar}>
+      <header
+        className={pathname !== "/" ? "navbar scrolled" : "navbar"}
+        ref={navbar}
+      >
         <div className="logo-section">
           <div className="logo">
             <p>M</p>

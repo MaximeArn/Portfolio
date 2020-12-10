@@ -22,7 +22,6 @@ const App = () => (
         <Contact />
         <Footer />
       </Route>
-      <NavBar />
       <Route path="/project/:projectName">
         <NavBar />
         <ProjectDetail />
