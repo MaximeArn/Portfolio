@@ -7,14 +7,36 @@
   &-content {
     padding: 4rem 0;
 
-    h2 {
-      display: inline-block;
-      color: vars.$green;
-      text-transform: uppercase;
-      font-weight: 700;
-      padding: 0.2rem;
-      border-bottom: 2px solid vars.$green;
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       margin-bottom: 3rem;
+      h2 {
+        display: inline-block;
+        color: vars.$green;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding: 0.2rem;
+        border-bottom: 2px solid vars.$green;
+      }
+
+      .logos {
+        display: flex;
+        a {
+          width: 25px;
+          height: 25px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: vars.$green;
+          color: vars.$white;
+          padding: 5px;
+          border-radius: 50%;
+          margin-right: 10px;
+          font-size: 0.8em;
+        }
+      }
     }
 
     form {

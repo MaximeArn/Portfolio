@@ -22,15 +22,21 @@ const About = () => {
             consectetur voluptatibus nemo aliquam doloribus{" "}
           </p>
           <div className="media-icons">
-            <i>
-              <FaFacebookF />
-            </i>
-            <i>
-              <FaTwitter />
-            </i>
-            <i>
-              <FaLinkedinIn />
-            </i>
+            <a href="">
+              <i>
+                <FaFacebookF />
+              </i>
+            </a>
+            <a href="">
+              <i>
+                <FaTwitter />
+              </i>
+            </a>
+            <a href="">
+              <i>
+                <FaLinkedinIn />
+              </i>
+            </a>
           </div>
         </div>
         <div className="image-section">

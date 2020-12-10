@@ -5,7 +5,7 @@ import fieldsValidator from "../../utils/fieldValidator";
 import "react-toastify/dist/ReactToastify.css";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
-import { FaGithubSquare } from "react-icons/fa";
+import { FaGithubit } from "react-icons/fa";
 
 import "./contact.scss";
 
@@ -57,9 +57,15 @@ const Contact = () => {
           <div className="header">
             <h2>get in touch</h2>
             <div className="logos">
-              <FaTwitter />
-              <FaLinkedinIn />
-              <FaGithubSquare />
+              <a href="https://twitter.com/MaximeARNOULD4">
+                <FaTwitter />
+              </a>
+              <a href="https://www.linkedin.com/in/maxime-arnould-337a031a3/">
+                <FaLinkedinIn />
+              </a>
+              <a href="https://github.com/MaximeArn">
+                <FaGithub />
+              </a>
             </div>
           </div>
           <form onSubmit={sendEmail}>
