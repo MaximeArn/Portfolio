@@ -109,5 +109,12 @@
 @media (min-width: 1200px) {
   .contact {
     padding: 1rem 20%;
+    .sender-infos {
+      display: flex;
+      justify-content: space-between;
+      input {
+        width: calc(50% - 5px);
+      }
+    }
   }
 }

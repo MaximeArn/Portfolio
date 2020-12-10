@@ -75,21 +75,23 @@ const Contact = () => {
             </div>
           </div>
           <form onSubmit={sendEmail}>
-            <input
-              required
-              type="text"
-              name="name"
-              placeholder="Full Name"
-              value={fromName}
-              onChange={({ target: { value } }) => setFromName(value)}
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Enter Your Email"
-              value={fromEmail}
-              onChange={({ target: { value } }) => setFromEmail(value)}
-            />
+            <div className="sender-infos">
+              <input
+                required
+                type="text"
+                name="name"
+                placeholder="Full Name"
+                value={fromName}
+                onChange={({ target: { value } }) => setFromName(value)}
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter Your Email"
+                value={fromEmail}
+                onChange={({ target: { value } }) => setFromEmail(value)}
+              />
+            </div>
             <input
               required
               type="text"
