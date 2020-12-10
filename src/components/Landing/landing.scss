@@ -47,8 +47,14 @@
         color: vars.$white;
         background-color: #222;
         border: none;
-        margin-right: 10%;
+        margin-right: 30px;
       }
     }
+  }
+}
+
+@media (min-width: 750px) {
+  .landing-background {
+    padding: 1rem 15%;
   }
 }

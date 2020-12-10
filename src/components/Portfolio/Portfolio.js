@@ -8,7 +8,7 @@ const Portfolio = () => {
     <section className="portfolio" id="portfolio">
       <div className="portfolio-content">
         <h2>latest Work</h2>
-        <div className="carousel">
+        <div className="projects-wrapper">
           {data.map((project) => (
             <Project key={project.name} {...project} />
           ))}
