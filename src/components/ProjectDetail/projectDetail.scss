@@ -3,7 +3,7 @@
 .projectDetail {
   margin-top: 5rem;
   min-width: 100vw;
-  min-height: 100vh;
+  min-height: calc(100vh -6rem);
 
   &-content {
     padding: 0 10%;

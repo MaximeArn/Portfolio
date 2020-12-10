@@ -11,7 +11,7 @@ import ProjectDetail from "../ProjectDetail/ProjectDetail";
 
 const App = () => (
   <Switch>
-    <div className="app">
+    <>
       <NavBar />
       <Route exact path="/">
         <Landing />
@@ -22,7 +22,7 @@ const App = () => (
         <Footer />
       </Route>
       <Route path="/project/:projectName" component={ProjectDetail} />
-    </div>
+    </>
   </Switch>
 );
 

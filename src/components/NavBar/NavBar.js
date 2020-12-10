@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Menu from "./Menu/Menu";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
@@ -7,9 +8,13 @@ import "./navBar.scss";
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const navbar = useRef(null);
+  console.log(useLocation());
+  const { pathname } = useLocation();
 
   const handleScroll = () => {
-    window.scrollY > 100
+    pathname !== "/"
+      ? navbar.current.classList.add("scrolled")
+      : window.scrollY > 100
       ? navbar.current.classList.add("scrolled")
       : navbar.current.classList.remove("scrolled");
   };
