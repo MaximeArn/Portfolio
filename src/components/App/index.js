@@ -1,5 +1,6 @@
-import React from "react";
-import { Switch, Route } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Switch, Route, useParams } from "react-router-dom";
+import getProjectByName from "../../utils/getProjectByName";
 import NavBar from "../NavBar/NavBar";
 import Landing from "../Landing/Landing";
 import About from "../About/About";
