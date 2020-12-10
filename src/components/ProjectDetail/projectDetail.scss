@@ -1,7 +1,7 @@
 @use '../../styles/vars';
 
 .projectDetail {
-  margin-top: 5rem;
+  margin-top: 6rem;
   min-width: 100vw;
   min-height: calc(100vh -6rem);
 
@@ -18,9 +18,41 @@
       margin-bottom: 2rem;
     }
 
+    .technos {
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+
+      .techno {
+        background-color: vars.$green;
+        border-radius: 25px;
+        padding: 10px;
+        color: white;
+        margin-right: 10px;
+        margin-bottom: 0.7rem;
+      }
+    }
+
+    h3 {
+      display: inline-block;
+      color: vars.$green;
+      text-transform: uppercase;
+      font-weight: 700;
+      padding: 0.2rem;
+      border-bottom: 2px solid vars.$green;
+      font-size: 0.8em;
+      margin-bottom: 1rem;
+    }
+
+    img {
+      margin-bottom: 2rem;
+    }
+
     .project-description {
       font-size: 0.8em;
       line-height: 1.5;
+      margin-bottom: 2rem;
     }
   }
 }

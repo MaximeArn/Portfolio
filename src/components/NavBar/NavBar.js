@@ -11,9 +11,11 @@ const NavBar = () => {
   const { pathname } = useLocation();
 
   const handleScroll = () => {
-    window.scrollY > 100
-      ? navbar.current.classList.add("scrolled")
-      : navbar.current.classList.remove("scrolled");
+    if (pathname === "/") {
+      window.scrollY > 100
+        ? navbar.current.classList.add("scrolled")
+        : navbar.current.classList.remove("scrolled");
+    }
   };
 
   useEffect(() => {
