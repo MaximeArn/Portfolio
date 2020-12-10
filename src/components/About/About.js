@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebookF } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import profileImage from "../../assets/images/profile-image.jpg";
@@ -22,17 +22,17 @@ const About = () => {
             consectetur voluptatibus nemo aliquam doloribus{" "}
           </p>
           <div className="media-icons">
-            <a href="">
+            <a href="https://github.com/MaximeArn">
               <i>
-                <FaFacebookF />
+                <FaGithub />
               </i>
             </a>
-            <a href="">
+            <a href="https://twitter.com/MaximeARNOULD4">
               <i>
                 <FaTwitter />
               </i>
             </a>
-            <a href="">
+            <a href="https://www.linkedin.com/in/maxime-arnould-337a031a3/">
               <i>
                 <FaLinkedinIn />
               </i>
