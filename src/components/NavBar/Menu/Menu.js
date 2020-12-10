@@ -1,7 +1,8 @@
 import React from "react";
-import "./menu.scss";
+import { HashLink } from "react-router-hash-link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
+import "./menu.scss";
 
 const links = ["home", "about", "services", "portfolio", "contact"];
 const Menu = ({ menuOpen, setMenuOpen }) => {
@@ -18,9 +19,9 @@ const Menu = ({ menuOpen, setMenuOpen }) => {
               className="list-item"
               onClick={() => setMenuOpen(false)}
             >
-              <a className="list-item-link" href={`#${link}`}>
-                {link}
-              </a>
+              <HashLink to={`/#${link}`}>
+                <p className="list-item-link">{link}</p>
+              </HashLink>
             </li>
           ))}
         </ul>

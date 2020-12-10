@@ -8,7 +8,6 @@ import "./navBar.scss";
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const navbar = useRef(null);
-  console.log(useLocation());
   const { pathname } = useLocation();
 
   const handleScroll = () => {
