@@ -10,17 +10,21 @@ const ProjectDetail = () => {
   return (
     <section className="projectDetail">
       <div className="projectDetail-content">
-        <h2 className="section-title">{name}</h2>
-        <p className="project-description">{description}</p>
-        <h3>technos :</h3>
-        <ul className="technos">
-          {technos.map((techno) => (
-            <li key={techno} className="techno">
-              {techno}
-            </li>
-          ))}
-        </ul>
-        <img src={image} alt="image of the project" />
+        <div className="text">
+          <h2 className="section-title">{name}</h2>
+          <p className="project-description">{description}</p>
+          <h3>technos :</h3>
+          <ul className="technos">
+            {technos.map((techno) => (
+              <li key={techno} className="techno">
+                {techno}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="image-section">
+          <img src={image} alt="image of the project" />
+        </div>
       </div>
     </section>
   );

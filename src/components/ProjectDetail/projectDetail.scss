@@ -56,3 +56,33 @@
     }
   }
 }
+
+@media (min-width: 750px) {
+  .projectDetail {
+    padding: 0 15%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .projectDetail {
+    display: flex;
+    align-items: center;
+    padding: 4rem 15%;
+
+    &-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .text {
+        width: 50%;
+      }
+      .image-section {
+        width: 45%;
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}

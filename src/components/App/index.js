@@ -25,6 +25,7 @@ const App = () => (
       <Route path="/project/:projectName">
         <NavBar />
         <ProjectDetail />
+        <Footer />
       </Route>
     </>
   </Switch>
