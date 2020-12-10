@@ -1,0 +1,21 @@
+@use '../../styles/vars';
+
+.projectDetail {
+  margin-top: 5rem;
+  min-width: 100vw;
+  min-height: 100vh;
+
+  &-content {
+    padding: 0 10%;
+
+    .section-title {
+      display: inline-block;
+      color: vars.$green;
+      text-transform: uppercase;
+      font-weight: 700;
+      padding: 0.2rem;
+      border-bottom: 2px solid vars.$green;
+      margin-bottom: 3rem;
+    }
+  }
+}
