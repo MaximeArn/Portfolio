@@ -12,10 +12,10 @@ const Landing = () => {
           </p>
           <h2 className="sub-title">Professionel Web Developer</h2>
           <p className="description">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
-            dolorum perspiciatis ipsa quos quam. Vero reiciendis quasi pariatur
-            obcaecati animi totam architecto corporis accusamus beatae, cumque
-            rerum unde labore aliquid!
+            I am Maxime, 18 years old I am a fullstack JavaScript developer and
+            I am passionate about a whole lot of things, among others: travel,
+            history, science and especially computer science since my youngest
+            age
           </p>
         </div>
 

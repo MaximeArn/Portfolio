@@ -7,21 +7,24 @@ export default [
     name: "tindev",
     technos: ["typescript", "react", "redux", "mongoose"],
     image: tindev,
+    github: "https://github.com/MaximeArn/Tindev",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur possimus amet architecto nam iste veritatis, culpa beatae! Illo nisi dolores ducimus dolore assumenda quam, cumque fuga magnam, ab voluptate odit.",
+      " Social network to bring devs together with a shared project. You can also create a project yourself, or, join another user's project. You will be able to filter any project according to your criterias and discuss with other users through a chat or create groups to communicate easily with each others.",
   },
   {
     name: "calculator",
     technos: ["scss", "javascript", "react"],
     image: calculator,
+    github: "https://github.com/MaximeArn/react-calculator",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur possimus amet architecto nam iste veritatis, culpa beatae! Illo nisi dolores ducimus dolore assumenda quam, cumque fuga magnam, ab voluptate odit.",
+      "A simple calculator to train on my current skills and try new things (change the color theme and neumorphism effect on the buttons)",
   },
   {
     name: "portfolio",
     technos: ["scss", "javascript", "react"],
     image: portfolio,
+    github: "https://github.com/MaximeArn/Portfolio",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur possimus amet architecto nam iste veritatis, culpa beatae! Illo nisi dolores ducimus dolore assumenda quam, cumque fuga magnam, ab voluptate odit.",
+      "First project brought up to hosting (on netlify) and purchase of domain name.",
   },
 ];
