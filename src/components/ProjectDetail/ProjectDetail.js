@@ -1,17 +1,25 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import { FaGithub } from "react-icons/fa";
 import getProjectByName from "../../utils/getProjectByName";
 import "./projectDetail.scss";
 
 const ProjectDetail = () => {
   const { projectName } = useParams();
-  const { name, technos, image, description } = getProjectByName(projectName);
+  const { name, technos, image, description, github } = getProjectByName(
+    projectName
+  );
 
   return (
     <section className="projectDetail">
       <div className="projectDetail-content">
         <div className="text">
-          <h2 className="section-title">{name}</h2>
+          <a href={github} className="infos-header">
+            <i>
+              <FaGithub />
+            </i>
+            <h2 className="section-title">{name}</h2>
+          </a>
           <p className="project-description">{description}</p>
           <h3>technos :</h3>
           <ul className="technos">
