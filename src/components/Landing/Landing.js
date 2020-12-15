@@ -1,6 +1,6 @@
 import React from "react";
 import "./landing.scss";
-import resume from "../../assets/resume.jpg";
+import resume from "../../assets/resume.pdf";
 
 const Landing = () => {
   return (
