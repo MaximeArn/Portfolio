@@ -1,11 +1,11 @@
-import tindev from "../assets/images/projects/tindev.jpg";
+import tindev from "../assets/images/projects/tindev.png";
 import calculator from "../assets/images/projects/calculator.png";
 import portfolio from "../assets/images/projects/portfolio.png";
 
 export default [
   {
     name: "tindev",
-    technos: ["typescript", "react", "redux", "mongoose"],
+    technos: ["typescript", "react", "redux", "NodeJs", "Express", "mongoose"],
     image: tindev,
     github: "https://github.com/MaximeArn/Tindev",
     description:

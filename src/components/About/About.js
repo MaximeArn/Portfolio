@@ -2,7 +2,7 @@ import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
-import profileImage from "../../assets/images/profile-image.jpg";
+import profileImage from "../../assets/images/profile-image.jpeg";
 import "./about.scss";
 
 const About = () => {
