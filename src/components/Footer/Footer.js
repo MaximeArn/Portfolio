@@ -3,9 +3,9 @@ import "./footer.scss";
 
 const Footer = () => {
   return (
-    <section className="footer">
+    <footer className="footer">
       <p>Copyrights 2020. All rights reserved</p>
-    </section>
+    </footer>
   );
 };
 

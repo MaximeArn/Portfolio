@@ -12,10 +12,10 @@ const Landing = () => {
           </p>
           <h2 className="sub-title">Professionel Web Developer</h2>
           <p className="description">
-            I am Maxime, 18 years old I am a fullstack JavaScript developer and
-            I am passionate about a whole lot of things, among others: travel,
-            history, science and especially computer science since my youngest
-            age
+            I am Maxime, 18 years old I am a{" "}
+            <strong>fullstack JavaScript developer</strong> and I am passionate
+            about a whole lot of things, among others: travel, history, science
+            and especially computer science since my youngest age
           </p>
         </div>
 

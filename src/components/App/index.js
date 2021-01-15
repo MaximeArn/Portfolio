@@ -15,11 +15,13 @@ const App = () => (
     <>
       <Route exact path="/">
         <NavBar />
-        <Landing />
-        <About />
-        <Services />
-        <Portfolio />
-        <Contact />
+        <main>
+          <Landing />
+          <About />
+          <Services />
+          <Portfolio />
+          <Contact />
+        </main>
         <Footer />
       </Route>
       <Route path="/project/:projectName">

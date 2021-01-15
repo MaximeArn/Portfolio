@@ -42,7 +42,7 @@ const Contact = () => {
       ? toast.warn(fieldsValidated.message)
       : axios
           .post("https://api.emailjs.com/api/v1.0/email/send", data)
-          .then((res) => resetFields())
+          .then(() => resetFields())
           .catch((err) => console.log(err));
   };
 
@@ -64,17 +64,20 @@ const Contact = () => {
           <div className="header">
             <h2>get in touch</h2>
             <div className="logos">
-              <a href="https://github.com/MaximeArn">
+              <a href="https://github.com/MaximeArn" target="_blank">
                 <i>
                   <FaGithub />
                 </i>
               </a>
-              <a href="https://twitter.com/MaximeARNOULD4">
+              <a href="https://twitter.com/MaximeARNOULD4" target="_blank">
                 <i>
                   <FaTwitter />
                 </i>
               </a>
-              <a href="https://www.linkedin.com/in/maxime-arnould-337a031a3/">
+              <a
+                href="https://www.linkedin.com/in/maxime-arnould-337a031a3/"
+                target="_blank"
+              >
                 <i>
                   <FaLinkedinIn />
                 </i>
