@@ -14,7 +14,7 @@ const ProjectDetail = () => {
     <section className="projectDetail">
       <div className="projectDetail-content">
         <div className="text">
-          <a href={github} className="infos-header">
+          <a href={github} className="infos-header" target="_blank">
             <i>
               <FaGithub />
             </i>
