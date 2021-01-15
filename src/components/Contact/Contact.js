@@ -18,6 +18,13 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    const resetFields = () => {
+      setFromName("");
+      setFromEmail("");
+      setSubject("");
+      setText("");
+    };
+
     const data = {
       service_id: process.env.SERVICE_ID,
       template_id: process.env.TEMPLATE_ID,
@@ -35,7 +42,7 @@ const Contact = () => {
       ? toast.warn(fieldsValidated.message)
       : axios
           .post("https://api.emailjs.com/api/v1.0/email/send", data)
-          .then((res) => console.log(res))
+          .then((res) => resetFields())
           .catch((err) => console.log(err));
   };
 
