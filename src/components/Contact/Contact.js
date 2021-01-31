@@ -64,19 +64,31 @@ const Contact = () => {
           <div className="header">
             <h2>get in touch</h2>
             <div className="logos">
-              <a href="https://github.com/MaximeArn" target="_blank">
+              <a
+                href="https://github.com/MaximeArn"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Github Profile"
+              >
                 <i>
                   <FaGithub />
                 </i>
               </a>
-              <a href="https://twitter.com/MaximeARNOULD4" target="_blank">
+              <a
+                href="https://twitter.com/MaximeARNOULD4"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Twitter Profile"
+              >
                 <i>
                   <FaTwitter />
                 </i>
               </a>
               <a
-                href="https://www.linkedin.com/in/maxime-arnould-337a031a3/"
+                href="https://www.linkedin.com/in/maxime-arnould-dev/"
                 target="_blank"
+                rel="noreferrer"
+                aria-label="Linkedin Profile"
               >
                 <i>
                   <FaLinkedinIn />
@@ -87,6 +99,7 @@ const Contact = () => {
           <form onSubmit={sendEmail}>
             <div className="sender-infos">
               <input
+                aria-label="Full Name"
                 required
                 type="text"
                 name="name"
@@ -95,6 +108,7 @@ const Contact = () => {
                 onChange={({ target: { value } }) => setFromName(value)}
               />
               <input
+                aria-label="Email"
                 type="email"
                 name="email"
                 placeholder="Enter Your Email"
@@ -104,6 +118,7 @@ const Contact = () => {
             </div>
             <input
               required
+              aria-label="Subject"
               type="text"
               name="subject"
               placeholder="Subject"
@@ -112,6 +127,7 @@ const Contact = () => {
             />
             <textarea
               required
+              aria-label="Your Message"
               name="text"
               placeholder="Write Your Message Here"
               value={text}

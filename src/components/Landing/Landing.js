@@ -20,10 +20,14 @@ const Landing = () => {
         </div>
 
         <div className="buttons">
-          <a href="#about">
+          <a href="#about" aria-label="about section">
             <button className="green-button">About Me</button>
           </a>
-          <a href={resume} download="Maxime-Arnould-Resume">
+          <a
+            href={resume}
+            download="Maxime-Arnould-Resume"
+            aria-label="download CV"
+          >
             <button>Download CV</button>
           </a>
         </div>

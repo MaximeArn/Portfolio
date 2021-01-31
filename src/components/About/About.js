@@ -22,19 +22,31 @@ const About = () => {
             contact me so that we can work together
           </p>
           <div className="media-icons">
-            <a href="https://github.com/MaximeArn" target="_blank">
+            <a
+              href="https://github.com/MaximeArn"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Github Profile"
+            >
               <i>
                 <FaGithub />
               </i>
             </a>
-            <a href="https://twitter.com/MaximeARNOULD4" target="_blank">
+            <a
+              href="https://twitter.com/MaximeARNOULD4"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Twitter Profile"
+            >
               <i>
                 <FaTwitter />
               </i>
             </a>
             <a
-              href="https://www.linkedin.com/in/maxime-arnould-337a031a3/"
+              href="https://www.linkedin.com/in/maxime-arnould-dev/"
               target="_blank"
+              rel="noreferrer"
+              aria-label="Linkedin Profile"
             >
               <i>
                 <FaLinkedinIn />

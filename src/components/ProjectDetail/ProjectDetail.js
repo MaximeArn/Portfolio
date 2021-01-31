@@ -14,7 +14,12 @@ const ProjectDetail = () => {
     <section className="projectDetail">
       <div className="projectDetail-content">
         <div className="text">
-          <a href={github} className="infos-header" target="_blank">
+          <a
+            href={github}
+            className="infos-header"
+            target="_blank"
+            aria-label="link to the repo of the project"
+          >
             <i>
               <FaGithub />
             </i>
