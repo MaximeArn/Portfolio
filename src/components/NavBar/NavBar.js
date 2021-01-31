@@ -42,7 +42,7 @@ const NavBar = () => {
           </div>
         </div>
         <i className="burger-icon" onClick={() => setMenuOpen(true)}>
-          <FontAwesomeIcon icon={faBars} />
+          <FontAwesomeIcon icon={faBars} size="lg" />
         </i>
       </header>
     </>
